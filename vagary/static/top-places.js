@@ -43,6 +43,7 @@ var showdets = {
                     var ht1 = document.createElement("h3");
                     // assign country's name to ht1
                     ht1.innerHTML = places[0].split(",")[0];
+                    ht1.setAttribute("name", "reco1");
                     console.log(places[0].split(",")[0]);
                     var d1 = document.getElementById("d1");
                     d1.appendChild(ht1);

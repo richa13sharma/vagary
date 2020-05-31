@@ -23,6 +23,7 @@ var book = {
             var persons = data['1'].persons;
             console.log(name);
             var h4 = document.getElementById('name');
+            h4.setAttribute("name","place1b");
             var avail = document.getElementById('avail')
             h4.innerHTML = name;
             avail.innerHTML = "No of rooms available: "+persons

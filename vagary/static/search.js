@@ -31,7 +31,8 @@ var search = {
 				my_div = document.getElementById("heading");
 				my_div.innerHTML ="";
                 //console.log(my_div);
-                x = document.createElement("H1");
+				x = document.createElement("H1");
+				x.setAttribute("id","hotels")
                 t = document.createTextNode("Hotels in "+place);
                 x.appendChild(t);
 				my_div.appendChild(x);
@@ -195,7 +196,7 @@ function Suggest()
 	this.setPlace = function()
 	{
 		othis.placepart.value = this.innerHTML;
-		othis.div.innerHTML = "";
+		othis.div.innerHTML = ""
 		othis.div.style.display = "none";	
 
 		var drop = document.getElementById("drop");
